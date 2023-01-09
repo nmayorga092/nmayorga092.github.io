@@ -1,1 +1,1 @@
-Github page based on [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll) theme.
+Github page based on [texture](https://github.com/samarsault/texture) theme.
