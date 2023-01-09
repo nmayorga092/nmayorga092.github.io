@@ -1,1 +1,1 @@
-# Personal web page based on [Solo](http://chibicode.github.io/solo)
+Github page based on [solo](http://chibicode.github.io/solo)
