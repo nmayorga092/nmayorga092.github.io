@@ -15,7 +15,7 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Nicolás Mayorga
+  title: Nicolás
   tagline: Teleco
   date_format: "%b %-d, %Y"
   style: black
@@ -26,6 +26,8 @@ texture:
   social_links:
     twitter: nmayorga092 
     github:  nmayorga092
+    telegram: nmayorga
+    instagram: nicoms._
  
 
 # If you want to link only specific pages in your header, uncomment
