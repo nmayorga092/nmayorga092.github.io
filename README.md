@@ -1,1 +1,1 @@
-Github page based on [solo](http://chibicode.github.io/solo)
+Github page based on [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll) theme.
