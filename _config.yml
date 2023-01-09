@@ -1,7 +1,5 @@
 # Site settings
 title: Nicolás
-tag_text: 
-description: Github pages
 
 # Build settings
 markdown: kramdown

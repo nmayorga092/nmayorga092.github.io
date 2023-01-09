@@ -4,7 +4,7 @@ html {
   font: 16px/1.5 Inconsolata, sans-serif;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
   html {
     font-size: 20px;
   }
@@ -15,7 +15,7 @@ body {
   color: #333;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
   body {
     margin-top: 5rem;
   }
@@ -39,14 +39,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
   h1 {
-    font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -56,22 +58,28 @@ h1 a {
 
 h2 {
   margin-top: 2rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
   h2 {
     margin-top: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 }
 
 h3, h4, h5, h6 {
   margin-top: 1.5rem;
-  font-size: 1rem;
-  text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.8rem;
 }
 
 p, ul, ol, dl, table, pre, blockquote {
@@ -81,6 +89,7 @@ p, ul, ol, dl, table, pre, blockquote {
 
 ul, ol {
   padding-left: 1.5rem;
+  list-style-type: none;
 }
 
 dd {
@@ -112,8 +121,13 @@ hr {
 }
 
 .container img {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
+}
+
+img {
+    margin-bottom: 1rem;
 }
 
 table {
@@ -146,7 +160,20 @@ pre > code {
 }
 
 .container {
-  max-width: 30rem;
+  max-width: 40rem;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.flat {
+    margin-left: 0;
+    padding-left: 0;
+    display: inline;
+}
+.flat li {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 2px 15px 5px;
+    list-style: none;
+    display: inline;
 }
