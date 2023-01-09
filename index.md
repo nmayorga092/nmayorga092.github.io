@@ -1,7 +1,9 @@
 ---
 layout: page
 ---
-<p align="center"> <img src="https://github.com/nmayorga092/nmayorga092.github.io/blob/main/src/miau.gif" /></p>
+<p align="center"> <img src="https://github.com/nmayorga092/nmayorga092.github.io/blob/main/images/galaxy.jpg" /></p>
+
+---
 
 {% for post in site.posts  %}
 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
