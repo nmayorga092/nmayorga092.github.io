@@ -1,1 +1,1 @@
-Github page based on [texture](https://github.com/samarsault/texture) theme.
+Github page based on [indigo](https://github.com/sergiokopplin/indigo) theme.

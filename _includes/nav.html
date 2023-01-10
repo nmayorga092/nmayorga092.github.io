@@ -1,9 +1,39 @@
-{%- if site.texture.showNav -%}
-<div class="navbar">
-	<ul>
-		{% for link in site.texture.navigation %}
-		<a href="{{ link.url | prepend:site.baseurl }}"><li {% if link.url == page.url %}class="active"{% endif %} >{{ link.title }}</li></a>
-		{% endfor %}
-	</ul>
-</div>
-{%- endif -%}
+<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+    <ul class="list">
+        {% if page.title != "Home" %}
+            <li class="item">
+                <a class="link" href="{{ site.url }}/">Home</a>
+            </li>
+        {% endif %}
+
+        {% if site.blog == true %}
+            {% if page.title != "Blog" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/blog">Blog</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.projects == true %}
+            {% if page.title != "Projects" %}
+                <li class="item">
+                    <a class="link" href="https://github.com/nmayorga092?tab=repositories">Projects</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.about == true %}
+            {% if page.title != "About" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/404.html">About</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.resume == true %}
+            <li class="item">
+                <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Résumé</a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
